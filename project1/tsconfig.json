@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "es2022",
+        "skipLibCheck": true,
+        "allowJs": true,
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "moduleResolution": "node",
+        "rootDirs": ["./webapp"],
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "paths": {
+            "project1/*": [
+                "./webapp/*"
+            ],
+            "com/myorg/library1/*": [
+                "../com.myorg.library1/src/com/myorg/library1/*"
+            ]
+        },
+        "typeRoots": [
+            "./node_modules/@types",
+            "./node_modules/@sapui5/types"
+        ]
+    },
+    "include": [
+        "./webapp/**/*",
+        "../com.myorg.library1/src/com/myorg/library1/*"
+    ]
+}
